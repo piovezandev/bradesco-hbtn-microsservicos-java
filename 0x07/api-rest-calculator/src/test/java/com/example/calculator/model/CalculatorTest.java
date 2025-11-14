@@ -6,14 +6,12 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import java.time.LocalDate;
 
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class CalculatorTest {
 
-	@InjectMocks
-	private Calculator calculator;
+	private Calculator calculator = new Calculator();
 
 	@Test
 	void sumTest() {

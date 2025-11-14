@@ -3,9 +3,6 @@ package com.example.calculator.model;
 import java.time.LocalDate;
 import java.time.Period;
 
-import org.springframework.stereotype.Service;
-
-@Service
 public class Calculator {
 
 	public Double sum(Double number1, Double number2) {

@@ -2,7 +2,6 @@ package com.example.calculator.controller;
 
 import java.time.LocalDate;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,8 +14,7 @@ import com.example.calculator.model.Calculator;
 @RequestMapping(value = "/calculator")
 public class CalculatorController {
 
-	@Autowired
-	private Calculator calculator;
+	private Calculator calculator = new Calculator();
 
 	@GetMapping("/welcome")
 	public String messageWelcome() {
